@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro</title>
+  <link rel="stylesheet" href="../css/registro.css">
+</head>
+    
+<body>
+
+    <nav>
+        <a href="index.html" id="logo"><img src="../imagenes_empresa/zinbolos/ChatGPT Image 20 sept 2025, 07_43_52 p.m..png" alt="" width="70px" height="70px"></a>
+        <a href="inicio_sesion.html" id="inicio_sesion">Inicio de sesion</a>
+        <div class="dropdown">
+    <a href="html/todos_zapatos.html" class="dropbtn">Catalogo</a> 
+    <ul class="dropdown-content"> 
+        <li><a href="html/casuales.html">Casual</a></li> 
+        <li><a href="html/deportivos.html">Deportivo</a></li>
+        <li><a href="html/senderismo.html">Senderismo</a></li> 
+        <li><a href="html/formales.html">formal</a></li>
+    </ul> 
+</div>
+        <a href=" "> carrito</a>
+    </nav>
+
+  <h1>Crear una cuenta</h1>
+  <div id="texto">
+    <form action="/registro" method="post">
+<label for="nombre">Nombre completo:</label><br>
+  <input 
+  type="text" 
+  id="nombre" 
+  name="nombre" 
+  required 
+  minlength="3" 
+  maxlength="40" 
+  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" 
+  placeholder="Ej: Eduar Moises Baes ">
+    <br><br>
+    <label for="edad">Edad:</label><br>
+    <input 
+  type="number" 
+  id="edad" 
+  name="edad" 
+  required 
+  min="18" 
+  max="99" 
+  placeholder="+18">
+    <br><br>
+
+
+    <label for="correo">Correo electrónico:</label><br>
+    <input type="email" id="correo" name="correo" required><br><br>
+
+    <label for="telefono">Número de teléfono:</label><br>
+    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}"><br><br>
+
+    <label for="contraseña">Contraseña:</label><br>
+    <input type="password" id="contraseña" name="contraseña" required><br><br>
+
+    <label for="confirmar">Confirmar contraseña:</label><br>
+    <input type="password" id="confirmar" name="confirmar" required><br><br>
+
+    <button type="submit">Registrarse</button>
+  </form>
+  </div>
+
+  
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja de Comentarios</title>
+    <link rel="stylesheet" href="../css/comentario.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html" id="logo"> <img src="../imagenes_empresa/zinbolos/ChatGPT Image 20 sept 2025, 07_43_52 p.m..png" alt="" width="70px" height="70px"> </a>
+        <a href="../inicio_sesion.html" >inicio de sesion</a>
+        <a href="todos_zapatos.html" id="roja">zapatos</a>
+        <a href="carrito.html"> carrito</a>
+    </nav>
+
+    <div class="contenedor-comentarios">
+        <h1>Comentarios</h1>
+
+        <!-- Formulario para enviar comentarios -->
+        <form class="formulario-comentario" action="enviar_comentario.php" method="POST">
+            <input type="text" id="nombre" name="nombre" placeholder="Usuario" required>
+            <textarea id="comentario" name="comentario" placeholder="Escribe tu comentario" required></textarea>
+            <button type="submit">Enviar Comentario</button>
+        </form>
+    </div>
+</body>
+</html>

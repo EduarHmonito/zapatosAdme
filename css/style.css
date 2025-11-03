@@ -1,0 +1,119 @@
+header {
+    background-color: rgb(247, 243, 243);
+    height: 50px;
+    text-align: center;
+    
+}
+
+
+nav {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+nav a {
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+h2 {
+ margin: 20px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-style: italic;
+}
+
+p {
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-style: italic;
+ margin: 10px;
+}
+
+ol {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.zapato img {
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+}
+
+.zapatos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 90px;
+}
+
+
+
+
+
+.zapatos {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* Activa el scroll horizontal */
+  padding: 20px;
+  scroll-snap-type: x mandatory; /* 👈 hace que el scroll se “pegue” a cada producto */
+}
+
+.zapato {
+  flex: 0 0 200px; /* ancho fijo para cada producto */
+
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+
+  scroll-snap-align: start; /* 👈 cada producto se alinea al hacer scroll */
+}
+
+/* Opcional: ocultar la barra de scroll en navegadores modernos */
+.zapatos::-webkit-scrollbar {
+  height: 9px;
+}
+.zapatos::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Descripcion{
+
+    margin: 5px 0;
+    font-size: 14px;
+    border-color: aliceblue;
+}
+
+.fin {
+background-color: black;
+    color: aliceblue;
+    padding: 2px;
+}
+
+#titulo-fin{
+    text-align: center;
+    margin: 2%;
+}
+#subtitulo-fin {
+    font-style: italic;
+    margin: 2%;
+}
+#parra-fin {
+    margin: 2%;
+}

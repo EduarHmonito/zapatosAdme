@@ -1,0 +1,130 @@
+.contenedor-comentarios {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.formulario-comentario {
+    margin-bottom: 20px;
+}
+
+.formulario-comentario input[type="text"],
+.formulario-comentario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Evita que el padding aumente el ancho total */
+}
+
+.formulario-comentario button {
+    background-color: #295a79;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.lista-comentarios {
+    margin-top: 20px;
+}
+
+.comentario {
+    border-bottom: 1px solid #ffffff;
+    padding: 10px 0;
+}
+
+.comentario p {
+    margin: 5px 0;
+}
+
+.nombre-comentario {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Animación slideUpReturn */
+@keyframes slideUpReturn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-20%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Aplicamos la animación al título */
+.titulo-animado {
+  text-align: center;
+  font-size: 2.5em;
+  color: #000000;
+  margin-bottom: 20px;
+  animation: slideUpReturn 1.5s ease-out;
+}
+
+/* Efecto al pasar el mouse */
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Al pasar el cursor */
+nav a:hover {
+  font-weight: bold;
+  color: #000;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  padding: 10px 15px;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    padding: 20px;
+    font-size: 20px;
+}
+
+nav #logo {
+    position: absolute;
+    left: 20px;
+}
+
+nav a {
+
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+    gap: 20px;
+    text-align: center;
+
+}

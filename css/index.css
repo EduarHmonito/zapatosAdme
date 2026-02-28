@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+}
+
 header {
 
     background-color: rgb(247, 243, 243);
@@ -139,27 +143,23 @@ ol {
 
 
 .fin {
-background-color: black;
+    background-color: black;  /*Se pone el color negro y recubre los cubos de informacion*/
     color: rgb(255, 255, 255);
     padding: 10px;
-
-
+    margin: 0;
 }
 .fin h2 {
     text-align: center;
 }
 
-.fin h3 {
-    text-align: center;
-}
+
 
 .contenedor {
     display: flex;              /* activa flexbox */
     justify-content: center;    /* centra los cubos horizontalmente */
     align-items: center;        /* centra verticalmente dentro del body */
-    gap: 20px;                  /* espacio entre los cubos */
-    margin-top: 50px;           /* espacio desde arriba */
-    margin-bottom: 50px;        
+    gap: 20px;                  /* espacio entre los cubos */ 
+    margin: 50px 10px 50px 10px;      
 }
 
     /* 🔹 Estilos de cada cubo */

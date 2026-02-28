@@ -1,3 +1,32 @@
+header {
+  background-color: rgb(247, 243, 243);
+    height: 80px;
+    text-align: center;
+    font-size: 30px; 
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  left: 20px;
+}
+h1 {
+    background-color: rgb(247, 243, 243);
+    height: 50px;
+    text-align: center;
+    font-size: 40px; 
+    
+}
 
 nav #logo {
   position: absolute;
@@ -25,9 +54,7 @@ nav {
 }
 
 
-h1 {
-    font-style: italic;
-}
+
 
 h2 {
     font-style: italic;

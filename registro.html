@@ -7,10 +7,16 @@
 </head>
     
 <body>
-
+<header> 
+        <div class="logo">
+            <a href="index.html" id="logo"> <img src="../imagenes_empresa/zinbolos/ChatGPT Image 20 sept 2025, 07_43_52 p.m..png" alt="" width="70px" height="70px"> </a> 
+        </div>
+        
+    <h1>Zapatos ADME</h1>
+        </header>
     <nav>
-        <a href="index.html" id="logo"><img src="../imagenes_empresa/zinbolos/ChatGPT Image 20 sept 2025, 07_43_52 p.m..png" alt="" width="70px" height="70px"></a>
-        <a href="inicio_sesion.html" id="inicio_sesion">Inicio de sesion</a>
+         <img src="../imagenes_empresa/zinbolos/flecha_devolver.png" alt="Volver" onclick="history.back()" style="cursor:pointer;" id="logo" width="40px" height="40px">
+        <a href="inicio_sesion.html" id="inicio_sesion">Inicio de sesión</a>
         <div class="dropdown">
     <a href="html/todos_zapatos.html" class="dropbtn">Catalogo</a> 
     <ul class="dropdown-content"> 
@@ -20,51 +26,30 @@
         <li><a href="html/formales.html">formal</a></li>
     </ul> 
 </div>
-        <a href=" "> carrito</a>
+        <a href="html/carrito.html"><img src="imagenes_empresa/carrito.png"  height="43px" width ="43px"></a> 
     </nav>
 
-  <h1>Crear una cuenta</h1>
+  <h2>Registrate</h2>
   <div id="texto">
     <form action="/registro" method="post">
-<label for="nombre">Nombre completo:</label><br>
-  <input 
-  type="text" 
-  id="nombre" 
-  name="nombre" 
-  required 
-  minlength="3" 
-  maxlength="40" 
-  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" 
-  placeholder="Ej: Eduar Moises Baes ">
-    <br><br>
-    <label for="edad">Edad:</label><br>
-    <input 
-  type="number" 
-  id="edad" 
-  name="edad" 
-  required 
-  min="18" 
-  max="99" 
-  placeholder="+18">
-    <br><br>
-
-
-    <label for="correo">Correo electrónico:</label><br>
-    <input type="email" id="correo" name="correo" required><br><br>
-
-    <label for="telefono">Número de teléfono:</label><br>
-    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}"><br><br>
-
-    <label for="contraseña">Contraseña:</label><br>
-    <input type="password" id="contraseña" name="contraseña" required><br><br>
-
-    <label for="confirmar">Confirmar contraseña:</label><br>
-    <input type="password" id="confirmar" name="confirmar" required><br><br>
-
-    <button type="submit">Registrarse</button>
-  </form>
+      <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="40" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+"  >
+        <br><br>
+      <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" required min="18" max="99" value=18>
+      <br><br>
+      <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+      <label for="telefono">Número de teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}"><br><br>
+      <label for="contraseña">Contrasena:</label><br>
+        <input type="password" id="contrasena" name="contrasena" required><br><br>
+      <label for="confirmar">Confirmar contraseña:</label><br>
+        <input type="password" id="confirmar" name="confirmar" required><br><br>
+      <button type="submit">Registrarse</button>
+    </form>
   </div>
 
-  
+  <script src="js/registro.js"></script>
 </body>
 </html>

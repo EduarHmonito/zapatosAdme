@@ -116,6 +116,58 @@ nav a {
 }
 
 h1 {
+
     text-align: center;
 }
 
+
+
+ .zapato {
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+
+ }
+ 
+
+.Catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 150px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.info {
+    width: 500px;
+}
+
+.tallas {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.talla {
+  
+  padding: 10px 15px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.talla:hover {
+  background-color: #000;
+  color: white;
+}
+
+.talla.seleccionada {
+  background-color: #000;
+  color: white;
+}
+.tallas{
+  margin: 10px;
+  
+}

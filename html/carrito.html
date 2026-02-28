@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/carrito.css">
 </head>
 <body>
     <nav>
         <a href="../index.html" id="logo"><img src="../imagenes_empresa/zinbolos/ChatGPT Image 20 sept 2025, 07_43_52 p.m..png" alt="" width="70px" height="70px"></a>
-        <a href="../inicio_sesion.html" id="inicio_sesion">Inicio de sesion</a>
+        <a href="../inicio_sesion.html" id="inicio_sesion">Inicio de sesión</a>
         <a href="../registro.html">Registro </a>
-        <a href="todos_zapatos.html">Catalogo</a>
         <div class="dropdown">
-    <a href="todos_zapatos.html" class="dropbtn">Catalogo</a> 
+    <a href="todos_zapatos.html" class="dropbtn">Catálogo</a> 
     <ul class="dropdown-content"> 
         <li><a href="casuales.html">Casual</a></li> 
         <li><a href="deportivos.html">Deportivo</a></li>
@@ -21,5 +21,19 @@
     </ul> 
 </div>
     </nav>
+
+      
+
+  <hr>
+
+  <section id="carrito-section">
+    <h1>🛒 Tu carrito</h1>
+    <ul id="lista-carrito"></ul>
+    <p><strong>Total:</strong> $<span id="total">0</span></p>
+    <button id="vaciar">Vaciar carrito</button>
+  </section>
+
+  <!-- 👇 Muy importante: el script va al final del body -->
+  <script src="../js/carrito.js"></script>
 </body>
 </html>

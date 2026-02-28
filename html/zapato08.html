@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bota Senderismo</title>
     <link rel="stylesheet" href="../css/producto.css">
+    <link rel="icon" href="../imagenes_empresa/zinbolos/ChatGPT Image 20 sept 2025, 07_43_52 p.m..png" type="image/x-icon">
 </head>
 <body>
-    <nav> <a href="../index.html" id="logo"> <img src="../imagenes_empresa/zinbolos/flecha_devolver.png" alt="" width="40px" height="40px"> </a> 
-    <a href="../inicio_sesion.html" id="inicio_sesion">Inicio de sesion</a>  
+        <header> 
+        <h1">Zapatos ADME</h1>
+
+    </header>
+    <nav> 
+    <img src="../imagenes_empresa/zinbolos/flecha_devolver.png" alt="Volver" onclick="history.back()" style="cursor:pointer;" id="logo" width="40px" height="40px">
+    <a href="../inicio_sesion.html" id="inicio_sesion">Inicio de sesión</a>  
     <a href="../registro.html">Registro</a>  
     <!-- Dropdown funcional --> 
 <div class="dropdown">
-    <a href="todos_zapatos.html" class="dropbtn">Catalogo</a> 
+    <a href="todos_zapatos.html" class="dropbtn">Catálogo</a> 
     <ul class="dropdown-content"> 
         <li><a href="casuales.html">Casual</a></li> 
         <li><a href="deportivos.html">Deportivo</a></li>
@@ -20,17 +26,48 @@
         <li><a href="formales.html">formal</a></li>
     </ul> 
 </div>
-    <a href="carrito.html">Carrito</a> 
+     <a href="carrito.html"><img src="../imagenes_empresa/carrito.png"  height="43px" width ="43px"></a> 
 </nav>
 
-
-    <h1>Tenis Deportivos Azul Marino </h1>
-    <img src="../imagenes_empresa/zapatos/zapato08.jpg" alt="" width="400px " height="400px">
-    <ul>
-        <li>Estilo: Bota alta deportiva o outdoor.</li>
+<div class="Catalogo">
+    <div class="imagen">
+<img src="../imagenes_empresa/zapatos/zapato08.jpg" alt="" width="400px " height="400px" class="zapato">
+    </div>
+    <div class="info">
+        <h2>Bota Negra Senderismo </h2>
+                <div class="tallas">
+  <button class="talla">36</button>
+  <button class="talla">37</button>
+  <button class="talla">38</button>
+  <button class="talla">39</button>
+  <button class="talla">40</button>
+  <button class="talla">41</button>
+  <button class="talla">42</button>
+</div>
+<div>
+  <h3>descripción</h3>
+ <ul>
+        <li>Estilo: Bota alta deportiva o senderismo.</li>
         <li>Color:: Negra con suela blanca y detalles grises.</li>
         <li>Material: Fabricada en materiales sintéticos resistentes.</li>
         <li>Detalles: Suela gruesa antideslizante, pasadores metálicos, cuello acolchado y logo blanco en el lateral. Perfecta para clima frío o caminatas urbanas.</li>
+        <li>Precio: <strong>120.000</strong></li>
     </ul>
+    </div>
+
+<p id="resultado"></p>
+    <div>
+        <section id="productos">
+        <div class="producto">
+            <button data-nombre="Bota Negra Senderismo" data-precio="200000">Agregar al carrito</button>
+        </div>
+        </section>
+    </div>
+</div>
+</div>
+
+    <script src="../js/carrito.js"></script>
+    <script src="../js/producto.js"></script>
+   
 </body>
 </html>

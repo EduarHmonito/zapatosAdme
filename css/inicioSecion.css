@@ -1,3 +1,27 @@
+header {
+    background-color: rgb(247, 243, 243);
+    height: 80px;
+    text-align: center;
+    font-size: 30px; 
+     display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+    
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  left: 20px;
+}
+
 nav {
     padding: 5%;
     text-align: center;
@@ -12,12 +36,7 @@ nav {
     font-style: italic;
     padding: 20px;
     font-size: 20px;
-    background-color: rgb(243, 240, 240);
-      border-radius: 15px;
-    border: 2px;
-    border-color: rgba(0, 0, 0, 0.37);
-    border-style: solid;
-    
+
 }
 
 nav #logo {
@@ -36,27 +55,16 @@ nav a {
     
 }
 
-#boton {
-    color: brown;
 
-}
 
 form{
     text-align: center;
+    
 
 }
 
 h1{
     text-align: center;
-}
-
-
-
-
-
-#boton{
-background-color: rgb(255, 255, 255);
-border: 0px;
 }
 
 
@@ -153,18 +161,52 @@ nav a {
 }
 
 #texto{
-  height: 160px;
-  width: 210px;
-  margin: auto;
+  height: 200px;
+  width: 250px;
+  margin: 10px;
   border-radius: 9px;
   background-color: rgba(180, 179, 179, 0.808);
+  margin: auto;
   
 }
 
 #boton {
-  background-color: rgba(248, 36, 29, 0.452);
+  background-color: rgba(0, 0, 0, 0.452);
   width: 100px;
   height: 10px;
   margin: auto;
+  margin-top: 10px;
+  border-radius: 9px;
+  
+}
+
+#nose{
+  color: #f9f9f9;
+}
+input {
+  border-radius: 5px;
+  font-size: 90%;
+}
+
+button{
+  font-size: 100%;
+}
+label {
+  font-size: 17px;
+}
+
+input {
+  border-radius: 5px;
+  font-size: 100%;
+  margin-top: 7px;
+  padding: 5px;
+}
+
+button{
+  font-size: 100%;
+}
+label {
+  font-size: 17px;
+  font-weight:900;
   
 }

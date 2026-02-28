@@ -1,44 +1,53 @@
-document.querySelector ('form').addEventListener ('submit', function (event) {
-    event.preventDefault (); // evitar redarga o eviar formurario
-    
-    const nombre = document.getElementById ('nombre').value. trim ();
-    const correo = document.getElementById ('correo').value.trim ();
-    const contrasena = document.getElementById ('contrasena').value.trim ();
-    const confirmar = document.getElementById ('confirmar').value.trim ();
-    const telefono = document.getElementById ('telefono').value.trim ();
-    const edad = document.getElementById ('edad').value.trim ();
-    if (!nombre || !correo || !contraseña || !confirmar || !telefono || !edad) {
-        alert ('por favor completar todos los campos')
+console.log("✅ El archivo inicio_secion.js se cargó correctamente");
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('form');
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault(); // Evitar recargar la página
+
+    const nombre = document.getElementById('nombre').value.trim();
+    const correo = document.getElementById('correo').value.trim();
+    const contrasena = document.getElementById('contrasena').value.trim();
+    const confirmar = document.getElementById('confirmar').value.trim();
+    const telefono = document.getElementById('telefono').value.trim();
+    const edad = document.getElementById('edad').value.trim();
+
+    if (!nombre || !correo || !contrasena || !confirmar || !telefono || !edad) {
+      alert('Por favor completa todos los campos');
+      return;
     }
+
     const emailRegex = /\S+@\S+\.\S+/;
-    if (!emailRegex.text (correo)){
-        alert ('Correo inexcistente')
-        return;
+    if (!emailRegex.test(correo)) {
+      alert('Correo inexistente o mal escrito');
+      return;
     }
 
-    if(!/^\d+$/ .test(telefono)) {
-        alert ('el telefono esta mal escrito');
-        return
+    if (!/^\d+$/.test(telefono)) {
+      alert('El teléfono está mal escrito');
+      return;
     }
+
     if (contrasena.length < 8) {
-        alert ('la tienes muy corta minimo 8 carecateres')
+      alert('La contraseña es muy corta (mínimo 8 caracteres)');
+      return;
     }
-
 
     if (contrasena !== confirmar) {
-        alert ( 'no coinciden la contraseñas')
-        return;
+      alert('Las contraseñas no coinciden');
+      return;
     }
 
-    alert (' lo iso bien bienvenido')
+    alert('✅ Registro exitoso. ¡Bienvenido!');
 
-    const usuario = { nombre, correo, contraseña, confirmar, telefono, edad }
-    localStorage.setItem ('usuarioRegistrdo', JSON.stringify(usuario))
+    const usuario = { nombre, correo, contrasena, telefono, edad };
+    localStorage.setItem('usuarioRegistrado', JSON.stringify(usuario));
 
-    
-    document.querySelector ('form') .reset ()
+    form.reset();
 
-    setTimeout (()=> {
-        window.location.href = 'inicio_sesion.html';
-    }, 1000)
-})
+    setTimeout(() => {
+      window.location.href = 'inicio_sesion.html';
+    }, 1000);
+  });
+});
+

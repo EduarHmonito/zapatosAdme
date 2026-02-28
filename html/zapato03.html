@@ -9,13 +9,17 @@
 
 </head>
 <body>
-  
-    <nav> <a href="../index.html" id="logo"> <img src="../imagenes_empresa/zinbolos/flecha_devolver.png" alt="" width="40px" height="40px"> </a> 
-    <a href="../inicio_sesion.html" id="inicio_sesion">Inicio de sesion</a>  
+      <header> 
+        <h1">Zapatos ADME</h1>
+
+    </header>
+    <nav>
+    <img src="../imagenes_empresa/zinbolos/flecha_devolver.png" alt="Volver" onclick="history.back()" style="cursor:pointer;" id="logo" width="40px" height="40px">
+    <a href="../inicio_sesion.html" id="inicio_sesion">Inicio de sesión</a>  
     <a href="../registro.html">Registro</a>  
     <!-- Dropdown funcional --> 
 <div class="dropdown">
-    <a href="todos_zapatos.html" class="dropbtn">Catalogo</a> 
+    <a href="todos_zapatos.html" class="dropbtn">Catálogo</a> 
     <ul class="dropdown-content"> 
         <li><a href="casuales.html">Casual</a></li> 
         <li><a href="deportivos.html">Deportivo</a></li>
@@ -23,21 +27,50 @@
         <li><a href="formales.html">formal</a></li>
     </ul> 
 </div>
-    <a href="carrito.html">Carrito</a> 
+     <a href="carrito.html"><img src="../imagenes_empresa/carrito.png"  height="43px" width ="43px"></a> 
 </nav>
 
- 
-  <h1>Teni Deportivo Gris</h1>
-  <img src="../imagenes_empresa/zapatos/zapato03.png" alt="Zapato casual" width="400px " height="400px">
-  <ul>
-  <li>Estilo: Tenis deportivos de entrenamiento o uso urbano.</li>
-    <li>Color: Gris claro con suela blanca. </li>
-    <li>Material:fabricado en malla transpirable con refuerzos sintéticos. </li>
-    <li>Detalles: Líneas laterales blancas, cordones del mismo tono y logo en la lengüeta. Ofrecen ligereza y ventilación óptima.</li>
-  </ul>
 
-  
+<div class="Catalogo">
+  <div class ="imagen">
+<img src="../imagenes_empresa/zapatos/zapato03.png" alt="Zapato casual" width="400px " height="400px" class="zapato">
+  </div>
+    <div class="info">
+      <h2>Tenis Deportivo Gris</h2>
+              <div class="tallas">
+  <button class="talla">36</button>
+  <button class="talla">37</button>
+  <button class="talla">38</button>
+  <button class="talla">39</button>
+  <button class="talla">40</button>
+  <button class="talla">41</button>
+  <button class="talla">42</button>
+</div>
+<div>
+  <h3>descripción</h3>
+    <ul>
+      <li>Estilo: Tenis deportivos de entrenamiento o uso urbano.</li>
+      <li>Color: Gris claro con suela blanca. </li>
+      <li>Material:fabricado en malla transpirable con refuerzos sintéticos. </li>
+      <li>Detalles: Líneas laterales blancas, cordones del mismo tono y logo en la lengüeta. Ofrecen ligereza y ventilación óptima.</li>
+      <li>Precio: <strong>120.000</strong></li>
+    </ul>
+
+
+<p id="resultado"></p>
+        <div>
+            <section id="productos">
+    <div class="producto">
+      <button data-nombre="Teni Deportivo Gris" data-precio="100000">Agregar al carrito</button>
+    </div>
+    
+  </section>
+</div>
+</div>
+</div>
+
+  <script src="../js/producto.js"></script>
+<script src="../js/carrito.js"></script>
 </body>
 </html>
 
-</html>

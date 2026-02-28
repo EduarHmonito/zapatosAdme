@@ -1,4 +1,25 @@
+header {
+  background-color: rgb(247, 243, 243);
+    height: 80px;
+    text-align: center;
+    font-size: 30px; 
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
 
+.logo{
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  left: 20px;
+}
 nav #logo {
   position: absolute;
   left: 20px;
@@ -31,7 +52,10 @@ nav {
 }
 
 h1 {
-    font-style: italic;
+    background-color: rgb(247, 243, 243);
+    height: 50px;
+    text-align: center;
+    font-size: 40px; 
 }
 
 h2 {
@@ -173,4 +197,33 @@ nav a:hover::after {
 .dropdown:hover .dropdown-content {
     display: block;
     animation: boingInUp 0.5s;
+}
+
+
+.Catalogo{
+  display: grid;              
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 25px;                 
+  max-width: 1000px;
+  margin: 40px auto;
+}
+.hola{
+  border-color: #807f7f;
+  border: 2px;
+  border-style: solid;
+  padding: 10px;
+}
+
+.zapato{
+  width: 300px;
+  height: 300px;
+}
+p {
+    display:block ;
+    
+}
+
+h3{
+ 
+  text-align: center;
 }

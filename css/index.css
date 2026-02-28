@@ -1,9 +1,24 @@
 header {
+
     background-color: rgb(247, 243, 243);
-    height: 50px;
+    height: 80px;
     text-align: center;
-    font-size: 40px; 
-    
+    font-size: 30px; 
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  left: 20px;
 }
 
 nav {
@@ -51,7 +66,17 @@ ol {
     border-radius: 5%;
 }
 
-.zapatos{
+.zapato {
+  flex: 0 0 200px; /* ancho fijo para cada producto */
+
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+
+  scroll-snap-align: start; /* 👈 cada producto se alinea al hacer scroll */
+}
+
+.Catalogo{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 90px;
@@ -74,7 +99,7 @@ ol {
 }
 
 
-.zapatos {
+.Catalogo {
   display: flex;
   gap: 20px;
   overflow-x: auto; /* Activa el scroll horizontal */
@@ -82,21 +107,13 @@ ol {
   scroll-snap-type: x mandatory; /* 👈 hace que el scroll se “pegue” a cada producto */
 }
 
-.zapato {
-  flex: 0 0 200px; /* ancho fijo para cada producto */
 
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
-
-  scroll-snap-align: start; /* 👈 cada producto se alinea al hacer scroll */
-}
 
 /* Opcional: ocultar la barra de scroll en navegadores modernos */
-.zapatos::-webkit-scrollbar {
+.Catalogo::-webkit-scrollbar {
   height: 9px;
 }
-.zapatos::-webkit-scrollbar-thumb {
+.Catalogo::-webkit-scrollbar-thumb {
   background: #bbb;
   border-radius: 4px;
 }
@@ -124,7 +141,8 @@ ol {
 .fin {
 background-color: black;
     color: rgb(255, 255, 255);
-    padding: 1px;
+    padding: 10px;
+
 
 }
 .fin h2 {
@@ -304,4 +322,16 @@ nav a:hover::after {
 .contenedor .cubo:nth-last-child(-n+3):hover {
   transform: translateY(-17px); /* se acerca 17px hacia arriba */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* efecto de profundidad opcional */
+}
+
+.hola2{
+    display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  width: 99%;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  left: 20px;
 }

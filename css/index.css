@@ -161,6 +161,9 @@ ol {
     gap: 20px;                  /* espacio entre los cubos */ 
     margin: 50px 10px 50px 10px;      
 }
+h3{
+  margin-top:10px ;
+}
 
     /* 🔹 Estilos de cada cubo */
     .cubo {
@@ -324,14 +327,20 @@ nav a:hover::after {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* efecto de profundidad opcional */
 }
 
-.hola2{
-    display: flex;
+.pie_de_pagina{
+    background-color:black;
+    width: 100%;
+    height: 70px;
+}
+
+.texto_pie{
+  display: flex;
   align-items: center;
   position: relative;
   justify-content: center;
   width: 99%;
-  height: 70px;
   display: flex;
   position: absolute;
   left: 20px;
+  color: #ddd;
 }

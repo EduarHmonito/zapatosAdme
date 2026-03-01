@@ -168,6 +168,28 @@ h1 {
   color: white;
 }
 .tallas{
-  margin: 10px;
-  
+  margin: 10px; 
+}
+.pie_de_pagina{
+    display: block;
+    position: absolute;
+    border: 2px;
+    border-color: #000;
+    border-style: solid;
+  margin-top: 200px; ;
+    background-color:black;
+    width: 100%;
+    height: 70px;
+}
+
+.texto_pie{
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  width: 99%;
+  display: flex;
+  position: absolute;
+  left: 20px;
+  color: #ddd;
 }

@@ -201,3 +201,21 @@ label {
   font-weight:900;
   
 }
+.pie_de_pagina{
+  margin-top: 200px; ;
+    background-color:black;
+    width: 100%;
+    height: 70px;
+}
+
+.texto_pie{
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  width: 99%;
+  display: flex;
+  position: absolute;
+  left: 20px;
+  color: #ddd;
+}

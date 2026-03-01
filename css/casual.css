@@ -1,3 +1,6 @@
+body{
+  margin: 0;
+}
 header {
   background-color: rgb(247, 243, 243);
     height: 80px;
@@ -20,13 +23,7 @@ header {
   position: absolute;
   left: 20px;
 }
-h1 {
-    background-color: rgb(247, 243, 243);
-    height: 50px;
-    text-align: center;
-    font-size: 40px; 
-    
-}
+
 
 nav #logo {
   position: absolute;
@@ -204,4 +201,21 @@ nav a:hover::after {
 .dropdown:hover .dropdown-content {
     display: block;
     animation: boingInUp 0.5s;
+}
+.pie_de_pagina{
+    background-color:black;
+    width: 100%;
+    height: 70px;
+}
+
+.texto_pie{
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  width: 99%;
+  display: flex;
+  position: absolute;
+  left: 20px;
+  color: #ddd;
 }

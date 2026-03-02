@@ -1,9 +1,18 @@
 header {
     background-color: rgb(247, 243, 243);
-    height: 50px;
+    height: 80px;
     text-align: center;
-    font-size: 40px; 
+    font-size: 30px; 
+     display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
     
+}
+
+h1 {
+
+    text-align: center;
 }
 
 nav {
@@ -115,10 +124,7 @@ nav a {
   transition: color 0.3s, font-weight 0.3s;
 }
 
-h1 {
 
-    text-align: center;
-}
 
 
 

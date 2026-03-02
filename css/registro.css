@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+  width: 100%;
+}
 header {
   background-color: rgb(247, 243, 243);
     height: 80px;
@@ -57,11 +61,6 @@ nav a {
 
 #boton {
     color: rgb(189, 50, 50);
-
-}
-
-form{
-    text-align: center;
 
 }
 
@@ -168,37 +167,36 @@ nav a {
     animation: boingInUp 0.5s;
 }
 
-#texto{
-  padding: 20px;
-  height: 500px;
-  width: 290px;
-  margin: auto;
-  border-radius: 9px;
-  background-color: rgba(218, 218, 218, 0.808);
-  
+.todo{
+    height:607px ;
+    width: 30%;
+    background-color: rgb(201, 69, 42);
+    margin: auto;
 }
-
-#boton {
-  background-color: rgba(248, 36, 29, 0.452);
-  width: 100px;
-  height: 10px;
-  margin: auto;
-  
+.formurario{
+    background-color: rgb(168, 168, 168);
+    padding-top: 15px;
 }
-
-input {
-  border-radius: 5px;
-  font-size: 100%;
-  margin-top: 7px;
-  padding: 5px;
+input{
+    width: 88%;
+    height: 30px;
+    border-radius: 30px;
+    margin: 10px 5% 10px 5%;
+    border: none;
+}
+.texto{
+    margin: 0px 0px 5px 10px;
 }
 
 button{
-  font-size: 100%;
-}
-label {
-  font-size: 17px;
-  font-weight:900;
+    width: 90%;
+    height: 35px;
+    border-radius: 30px;
+    margin:10px 5% 10px 5% ;
+    color: white;
+    background-color: rgb(201, 69, 42);
+    border: none;
+  
   
 }
 .pie_de_pagina{

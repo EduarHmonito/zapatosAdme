@@ -1,0 +1,175 @@
+body{
+  margin: 0;
+  width: 100%;
+}
+header {
+  background-color: rgb(247, 243, 243);
+    height: 80px;
+    text-align: center;
+    font-size: 30px; 
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  left: 20px;
+}
+
+nav {
+    padding: 5%;
+    text-align: center;
+    font-size: 18px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    padding: 20px;
+    font-size: 20px;
+    
+    
+}
+
+nav #logo {
+    position: absolute;
+    left: 20px;
+   
+}
+
+nav a {
+
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+    gap: 20px;
+    text-align: center;
+    
+}
+/* Efecto al pasar el mouse */
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(255, 0, 0);
+  transition: width 0.3s ease-in-out;
+}
+
+/* Al pasar el cursor */
+nav a:hover {
+  font-weight: bold;
+  color: #000;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  padding: 10px 15px;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Botón del dropdown */
+.dropbtn {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Lista oculta */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Aparece debajo del botón */
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+
+/* Elementos de la lista */
+.dropdown-content li {
+    list-style: none;
+}
+
+.dropdown-content li a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover en cada elemento */
+.dropdown-content li a:hover {
+    background-color: #ddd;
+}
+
+/* Mostrar la lista al pasar el cursor */
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: boingInUp 0.5s;
+}
+
+.todo{
+    height:235px ;
+    width: 30%;
+    background-color: rgb(201, 69, 42);
+    margin: auto;
+}
+.formurario{
+    background-color: rgb(168, 168, 168);
+    padding-top: 15px;
+}
+input{
+    width: 88%;
+    height: 30px;
+    border-radius: 30px;
+    margin: 10px 5% 10px 5%;
+    border: none;
+}
+.texto{
+    margin: 0px 0px 5px 10px;
+}
+
+button{
+    width: 90%;
+    height: 35px;
+    border-radius: 30px;
+    margin:10px 5% 10px 5% ;
+    color: white;
+    background-color: rgb(201, 69, 42);
+    border: none;
+  
+  
+}
